@@ -1,10 +1,6 @@
 import React from 'react';
 import './App.css';
 import Navigation from './components/Navigation.js'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import {Form, FormControl, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About';
 import Home from './components/Home';
