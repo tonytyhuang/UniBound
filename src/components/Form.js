@@ -24,7 +24,7 @@ export default function Form() {
                 <label>Program</label>
                 <input type="text" name="" value="" placeholder="Enter Your Name"></input>
             </div>
-            <a href="#link" class="btn">Submit</a>
+            <a href="#link" class="btnn">Submit</a>
             
         </div>
     )
