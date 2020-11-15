@@ -30,6 +30,9 @@ function Navigation() {
       <Link to='/about'>
         <Nav.Link href="#link">About</Nav.Link>
       </Link>
+      <Link to='/form'>
+        <Nav.Link href="#link">Form</Nav.Link>
+      </Link>
       
       <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item h-ref="#action/3.1">Action</NavDropdown.Item>
