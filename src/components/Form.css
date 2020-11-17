@@ -32,7 +32,7 @@
 
 }
 
-.txtb input{
+.txtb input,.txtb textarea{
     width: 100%;
     border: none;
     background: none;
@@ -49,4 +49,6 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 12px;
+    border-radius: 6px;
+    width: 100%;
 }
