@@ -17,7 +17,10 @@ function App() {
         <Navigation/>
         <Route path="/about" component={About}/>
         <Route path="/home" component={Home}/>
-        <Route path="/form" component={Form}/>
+
+          <Route path="/form" component={Form}/>
+
+        
         
       </div>
     </Router>

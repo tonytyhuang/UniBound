@@ -37,6 +37,13 @@ export default function Form() {
                     <label>Program</label>
                     <input type="text" name="program" placeholder="Enter Your Name" ref={register}/>
                 </div>
+                <div>
+                    <label className = "switch">
+                        <input type="checkbox" />
+                        <span className="slider rounded" />
+                    </label>
+                   
+                </div>
 
                 <div class="txtb">
                     <label>Message</label>
