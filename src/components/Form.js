@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import "./Form.css";
@@ -12,6 +12,14 @@ export default function Form() {
     const onSubmit = (values) => {
         console.log(values);
     }
+
+    const [toggle, setToggle] = useState(false);
+
+    const toggler = () =>{
+        toggle ? setToggle(false): setToggle(true);
+    }
+
+
 
     return (
    
@@ -39,11 +47,19 @@ export default function Form() {
                 </div>
                 <div>
                     <label className = "switch">
-                        <input type="checkbox" />
+                        <input type="checkbox" onClick = {toggler}  />
                         <span className="slider rounded" />
                     </label>
                    
                 </div>
+
+                {toggle &&
+                    <div class="txtb" id="popup">
+                        <label>Facebook</label>
+                        <input type="text" name="facebook" placeholder="Enter Your Name" ref={register}/>
+                    </div>   
+                }
+
 
                 <div class="txtb">
                     <label>Message</label>
