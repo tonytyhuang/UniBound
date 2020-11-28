@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About';
 import Home from './components/Home';
 import Form from "./components/Form";
+import Landing from "./components/Landing";
 
 import{BrowserRouter as Router, Switch, Route }from 'react-router-dom';
 
@@ -15,6 +16,7 @@ function App() {
     <Router>
       <div className="App">
         <Navigation/>
+        <Route path="/" exact component = {Landing}/>
         <Route path="/about" component={About}/>
         <Route path="/home" component={Home}/>
 
