@@ -18,8 +18,8 @@ function Navigation() {
           <Link to='/home'>
           <Nav.Link href="#home">Home</Nav.Link>
           </Link>
-          <Link to = '/link'>
-          <Nav.Link href="#link">Link</Nav.Link>
+          <Link to = '/about'>
+          <Nav.Link href="#link">About</Nav.Link>
           </Link>
           <Link to = '/form'>
           <Nav.Link href = "#form">Form</Nav.Link>

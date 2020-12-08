@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import "./Form.css";
+import Navigation from './Navigation.js'
 
 export default function Form() {
 
@@ -32,8 +33,10 @@ export default function Form() {
 
 
     return (
-   
+        <div>
+        <Navigation/>
         <div class="user-form">
+            
             <h1>Connect with us!</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div class="txtb">
@@ -115,6 +118,7 @@ export default function Form() {
             </form>
 
             
+        </div>
         </div>
     )
 }
