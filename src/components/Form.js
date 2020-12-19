@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
+import {Spring} from 'react-spring/renderprops';
 import "./Form.css";
-import Navigation from './Navigation.js'
+import insta from '../images/insta.png';
+import facebook from '../images/facebook.png';
+
 
 export default function Form() {
 
@@ -33,9 +36,7 @@ export default function Form() {
 
 
     return (
-        <div>
-        <Navigation/>
-        <div class="user-form">
+<div class="user-form">
             
             <h1>Connect with us!</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -59,46 +60,75 @@ export default function Form() {
                     <input type="text" name="program" placeholder="Enter Potential/Future Program" ref={register}/>
                 </div>
                 <div>
-
-
+                    <img src= {facebook} class="logos" alt="oopsies"></img>
+                    <img src= {insta} class="logos" alt="oopsies"></img>
+                    <img src= {insta} class="logos" alt="oopsies"></img>
                 </div>
                 <div>
-                    <label className = "switch">
-                        <input type="checkbox" onClick = {toggler1}  />
-                        <span className="slider rounded" />
+                    <label class = "toggle">
+                        <input type = "checkbox" onClick={toggler1}></input>
                     </label>
 
-                    <label className = "switch">
-                        <input type="checkbox" onClick = {toggler2}  />
-                        <span className="slider rounded" />
+                    <label class = "toggle" >
+                        <input type = "checkbox" onClick={toggler2}></input>
                     </label>
 
-                    <label className = "switch">
-                        <input type="checkbox" onClick = {toggler3}  />
-                        <span className="slider rounded" />
+                    <label class = "toggle">
+                        <input type = "checkbox" onClick={toggler3}></input>
                     </label>
                    
                 </div>
 
                 {toggle1 &&
-                    <div class="txtb" id="popup">
-                        <label>Facebook</label>
-                        <input type="text" name="facebook" placeholder="Enter Facebook Link" ref={register}/>
-                    </div>   
+                    <Spring
+                        from={{ opacity: 0, marginTop: -100}} 
+                        to={{ opacity: 1, marginTop: 0}}
+                    >
+                        {props => (
+                            <div style={props}>
+                                <div class="txtb" id="popup">
+                                    <label>Facebook</label>
+                                    <input type="text" name="facebook" placeholder="Enter Facebook Link" ref={register}/>
+                                </div> 
+                            </div>
+                        )}
+                    </Spring>
+ 
                 }
 
                 {toggle2 &&
-                    <div class="txtb" id="popup">
-                        <label>Instagram</label>
-                        <input type="text" name="instagram" placeholder="Enter Instagram Account Name" ref={register}/>
-                    </div>   
+                    <Spring
+                    from={{ opacity: 0, marginTop: -100}} 
+                    to={{ opacity: 1, marginTop: 0}}
+                    >
+                    {props => (
+                        <div style={props}>
+                            <div class="txtb" id="popup">
+                                <label>Instagram</label>
+                                <input type="text" name="instagram" placeholder="Enter Instagram Account Name" ref={register}/>
+                            </div>   
+                        </div>
+                    )}
+                    </Spring>
+
                 }
 
                 {toggle3 &&
-                    <div class="txtb" id="popup">
-                        <label>Wechat</label>
-                        <input type="text" name="wechat" placeholder="Enter WeChat ID" ref={register}/>
-                    </div>   
+                    <Spring
+                    from={{ opacity: 0, marginTop: -100}} 
+                    to={{ opacity: 1, marginTop: 0}}
+                    >
+                    {props => (
+                        <div style={props}>
+                            <div class="txtb" id="popup">
+                                <label>Wechat</label>
+                                <input type="text" name="wechat" placeholder="Enter WeChat ID" ref={register}/>
+                            </div>  
+                        </div>
+                    )}
+                    </Spring>
+                
+ 
                 }
 
                 <div class="txtb" id="popup">
@@ -118,7 +148,6 @@ export default function Form() {
             </form>
 
             
-        </div>
         </div>
     )
 }
