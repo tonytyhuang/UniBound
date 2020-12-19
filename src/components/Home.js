@@ -8,7 +8,8 @@ import Form from './Form.js'
 export default function Home() {
 
     return (
-        <div className = "homePage">
+        <div>
+            <div className = "homePage">
                 <Navigation/>
                 <h1 className = "homeTitle">UNIBOUND</h1>
                 <p>
@@ -18,8 +19,15 @@ export default function Home() {
                 <p>
                 <Button variant="primary">Learn more</Button>
                 </p>
+                
+            </div>
+            <div>
                 <Form/>
+            </div>
+
+
         </div>
+
 
     )
 }
