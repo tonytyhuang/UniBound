@@ -3,6 +3,7 @@ import {Jumbotron, Button} from 'react-bootstrap'
 import "./Home.css"
 import Navigation from './Navigation.js'
 import Form from './Form.js'
+import Timelinew from './Timeline'
 //import Background from '/logo512.png'
 
 export default function Home() {
@@ -22,8 +23,12 @@ export default function Home() {
                 
             </div>
             <div>
+                <Timelinew/>
+            </div>
+            <div>
                 <Form/>
             </div>
+
 
 
         </div>

@@ -9,6 +9,10 @@
     color: white;
 }
 
+.form{
+    position: relative;
+}
+
 p{
     color:white;
 }

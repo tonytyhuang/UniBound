@@ -6,6 +6,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Form from "./components/Form";
 import Landing from "./components/Landing";
+import Timelinew from "./components/Timeline"
 
 import{BrowserRouter as Router, Switch, Route }from 'react-router-dom';
 
@@ -19,8 +20,8 @@ function App() {
         <Route path="/" exact component = {Landing}/>
         <Route path="/about" component={About}/>
         <Route path="/home" component={Home}/>
-
-          <Route path="/form" component={Form}/>
+        <Route path="/timeline" component={Timelinew}/>
+        <Route path="/form" component={Form}/>
 
         
         
