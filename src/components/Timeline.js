@@ -133,7 +133,7 @@ const classes = useStyles();
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
-            <Link href='https://uwaterloo.ca/registrar/important-dates/calendar'>
+            <Link href='https://uwaterloo.ca/registrar/important-dates/calendar' target="_blank">
                 <Button size='large' variant='contained' color='primary'>
                     Calender
                 </Button>
