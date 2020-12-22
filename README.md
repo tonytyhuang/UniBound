@@ -75,5 +75,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 npm install react-hook-form
 npm install react-spring
 npm install @material-ui/core
+npm install @material-ui/lab
 
-poopoo
+cd backend - npm install express cors mongoose dotenv
+npm install -g nodemon
