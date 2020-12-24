@@ -5,6 +5,7 @@ import {Spring} from 'react-spring/renderprops';
 import "./Form.css";
 import insta from '../images/insta.png';
 import facebook from '../images/facebook.png';
+import axios from 'axios'
 
 
 export default function Form() {
@@ -13,8 +14,14 @@ export default function Form() {
     const history = useHistory()
     const {register, handleSubmit } = useForm()
 
+
+
     const onSubmit = (values) => {
         console.log(values);
+        const form = values;
+
+        axios.post('http://localhost:5000/form/add', form)
+            .then(res => console.log(res.data));
     }
 
     const [toggle1, setToggle1] = useState(false);
@@ -122,7 +129,7 @@ export default function Form() {
                         <div style={props}>
                             <div class="txtb" id="popup">
                                 <label>Wechat</label>
-                                <input type="text" name="wechat" placeholder="Enter WeChat ID" ref={register}/>
+                                <input type="text" name="weChat" placeholder="Enter WeChat ID" ref={register}/>
                             </div>  
                         </div>
                     )}
