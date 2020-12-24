@@ -20,8 +20,10 @@ export default function Form() {
         console.log(values);
         const form = values;
 
-        axios.post('http://localhost:5000/form/add', form)
+        axios.post('http://localhost:5000/forms/add', values)
             .then(res => console.log(res.data));
+
+        window.location = '/home';
     }
 
     const [toggle1, setToggle1] = useState(false);
@@ -148,7 +150,7 @@ export default function Form() {
 
                 <div class="txtb">
                     <label>Message/Questions</label>
-                    <textarea placeholder="Tell us a few points you want to ask about so help you find a better match"> </textarea>
+                    <textarea placeholder="Tell us a few points you want to ask about so help you find a better match" name="message" ref={register}> </textarea>
 
                 </div>
                 <input type="submit" class = "btnn"/>
