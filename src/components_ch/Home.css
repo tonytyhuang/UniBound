@@ -1,0 +1,18 @@
+.homePage{
+    height: 100vh;
+    background-image:url("../images/Background.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.homeTitle{
+    color: white;
+}
+
+.form{
+    position: relative;
+}
+
+p{
+    color:white;
+}
