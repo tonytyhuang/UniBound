@@ -80,3 +80,5 @@ npm install @material-ui/lab
 cd backend - npm install express cors mongoose dotenv
 npm install -g nodemon
 npm install axios
+
+npm install @material-ui/icons

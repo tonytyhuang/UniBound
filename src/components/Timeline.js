@@ -13,22 +13,30 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 
+import AssignmentLateIcon from '@material-ui/icons/AssignmentLate';
+
 
 const useStyles = makeStyles((theme) => ({
     paperleft: {
-        padding: '6px 16px',
+        padding: '8px 20px',
         spacing: 800,
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: "-2vw",
+        },
         marginLeft: "10vw",
         backgroundColor: "#fdd54f",
     },
     paperright: {
-        padding: '6px 16px',
+        padding: '10px 20px',
         spacing: 800,
+        [theme.breakpoints.down('sm')]: {
+            marginRight: "-2vw",
+        },
         marginRight: "10vw",
         backgroundColor: "#000",
     },
     opposite:{
-        marginTop: 25,
+        marginTop: "1vh",
     },
 
     content: {
@@ -54,28 +62,29 @@ const classes = useStyles();
 
                 <TimelineItem>
                     <TimelineOppositeContent className={classes.opposite}>
-                        <Typography variant="body2" color="textSecondary">
-                        9:30 am
+                        <Typography variant="body1" color="textSecondary">
+                        February 19th, 2021
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                        <TimelineDot>
+                        <TimelineDot color="secondary">
+                            <AssignmentLateIcon></AssignmentLateIcon>
                         </TimelineDot>
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
                         <Paper  elevation={4} className={classes.paperright}>
                             <Typography variant="h6" component="h1" align = "left" className={classes.colourright}>
-                                HELOO
+                                Deadline for Supplementary Material 
                             </Typography>
-                            <Typography align="left">Hi</Typography>
+                            <Typography align="left">Deadline for the Admission Information Form, required documents, and English language results (if applicable) for all programs except Conditional Admission to Pharmacy, Optometry, and Pharmacy.</Typography>
                         </Paper>
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent className={classes.opposite}>
-                        <Typography variant="body2" color="textSecondary">
-                        9:30 am
+                        <Typography variant="body1" color="textSecondary">
+                        April 15th, 2021
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -86,16 +95,16 @@ const classes = useStyles();
                     <TimelineContent> 
                         <Paper elevation={4} className={classes.paperleft}>
                             <Typography variant="h6" component="h1" align="right" className={classes.colourleft}>
-                                HELO
+                                Ontario Bursary
                             </Typography>
-                            <Typography>Hi</Typography>
+                            <Typography>Deadline for Ontario students to apply for an entrance bursary.</Typography>
                         </Paper>
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent className={classes.opposite}>
-                        <Typography variant="body2" color="textSecondary">
-                        9:30 am
+                        <Typography variant="body1" color="textSecondary">
+                        mid-May, 2021
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -106,16 +115,16 @@ const classes = useStyles();
                     <TimelineContent>
                         <Paper  elevation={4} className={classes.paperright}>
                             <Typography variant="h6" component="h1" align = "left" className={classes.colourright}>
-                                HELOO
+                                Offers of Admission sent out
                             </Typography>
-                            <Typography align="left">Hi</Typography>
+                            <Typography align="left"></Typography>
                         </Paper>
                     </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent className={classes.opposite}>
-                        <Typography variant="body2" color="textSecondary">
-                        9:30 am
+                        <Typography variant="body1" color="textSecondary">
+                        June 1st, 2021
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -126,9 +135,9 @@ const classes = useStyles();
                     <TimelineContent> 
                         <Paper elevation={4} className={classes.paperleft}>
                             <Typography variant="h6" component="h1" align="right" className={classes.colourleft}>
-                                HELO
+                                Deadline for Admission and Residence
                             </Typography>
-                            <Typography>Hi</Typography>
+                            <Typography>Deadline to accept an offer of admission and guaranteed residence. You must accept both offers to guarantee residence.</Typography>
                         </Paper>
                     </TimelineContent>
                 </TimelineItem>
