@@ -82,3 +82,5 @@ npm install -g nodemon
 npm install axios
 
 npm install @material-ui/icons
+
+for users install: npm install bycryptjs jsonwebtoken (in backend folder)
