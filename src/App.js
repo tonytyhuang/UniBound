@@ -8,9 +8,7 @@ import Form from "./components/Form";
 import Landing from "./components/Landing";
 import Timelinew from "./components/Timeline";
 
-import Home_ch from "./components_ch/Home";
-import Timeline_ch from "./components_ch/Timeline";
-import Form_ch from "./components_ch/Form";
+
 
 import{BrowserRouter as Router, Switch, Route }from 'react-router-dom';
 
@@ -27,9 +25,6 @@ function App() {
         <Route path="/timeline" component={Timelinew}/>
         <Route path="/form" component={Form}/>
 
-        <Route path="/home_ch" component={Home_ch}/>
-        <Route path="/timeline_ch" component={Timeline_ch}/>
-        <Route path="/form_ch" component={Form_ch}/> 
         
       </div>
     </Router>
