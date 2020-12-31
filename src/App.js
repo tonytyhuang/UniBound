@@ -12,6 +12,10 @@ import Home_ch from "./components_ch/Home";
 import Timeline_ch from "./components_ch/Timeline";
 import Form_ch from "./components_ch/Form";
 
+// import auth
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
+
 import{BrowserRouter as Router, Switch, Route }from 'react-router-dom';
 
 
@@ -30,6 +34,10 @@ function App() {
           <Route path="/home_ch" component={Home_ch}/>
           <Route path="/timeline_ch" component={Timeline_ch}/>
           <Route path="/form_ch" component={Form_ch}/> 
+
+          <Route path="/login" component={Login}/>
+          <Route path="/register" component={Register}/>
+          
         </Switch>
       </div>
     </Router>
